@@ -1,0 +1,76 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #f4f4f4; /* Light gray background */
+    font-family: Arial, sans-serif; /* Clean font */
+    text-align: center; /* Center-align content */
+    padding: 20px; /* Add some spacing around the edges */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between logo and text */
+    margin-bottom: 10px; /* Space below the header */
+}
+
+.header img {
+    width: 400px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #121349; /* Dark gray for title */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for the names */
+p {
+    font-size: 1.2rem;
+    margin: 5px 0; /* Space between the lines */
+    color: #555; /* Medium gray for text */
+}
+/* Title styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Space between title and icons */
+    color: #333; /* Dark gray color for text */
+}
+
+/* Container for icons */
+.icon-container {
+    display: flex;
+    justify-content: center; /* Centers icons horizontally */
+    align-items: center; /* Aligns icons vertically */
+    gap: 20px; /* Space between icons */
+}
+
+/* Image styling */
+.icon-container a img {
+    width: 100px; /* Size of icons */
+    height: 100px; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+.icon-container a:hover img {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .icon-container a img {
+        width: 80px; /* Smaller icons on mobile */
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjust title size for smaller screens */
+    }
+}
